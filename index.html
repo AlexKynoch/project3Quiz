@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Quiz</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <form id="quiz" name="quiz">  
+        <!-- <form> creates a form to collect the input -->
+        <h1>Quiz questions:</h1>
+
+        <h3><p class="questions">1. What is Scooby Doo's full name?</p></h3>
+
+        <!-- The value of question1 will be whichever radio button was selected - same for other questions-->
+        <input type="radio" id="options" name="question1" value="Scooby Doo">Scooby Doo  
+        <input type="radio" id="options" name="question1" value="Scooby Dooby Doo"> Scooby Dooby Doo<br>
+        <input type="radio" id="options" name="question1" value="Scoobert Doo"> Scoobert Doo
+        <input type="radio" id="options" name="question1" value="Schoobert Doobert"> Schoobert Doobert<br>
+
+        <h3><p class="questions">2. How many of his owners did Lucky the guide dog kill??</p></h3>
+        <input type="radio" id="options" name="question2" value="One"> 1
+        <input type="radio" id="options" name="question2" value="Two"> 2<br>
+        <input type="radio" id="options" name="question2" value="Three"> 3
+        <input type="radio" id="options" name="question2" value="Four"> 4<br>
+
+        <h3><p class="questions">3. Which company has produced more tyres than any other company in the world?</p></h3>
+        <input type="radio" id="options" name="question3" value="Goodyear"> Goodyear
+        <input type="radio" id="options" name="question3" value="Pirelli"> Pirelli<br>
+        <input type="radio" id="options" name="question3" value="Lego"> Lego
+        <input type="radio" id="options" name="question3" value="Mitchelin"> Mitchelin<br>
+
+        <h3><p class="questions">4. What does TARDIS stand for?</p></h3>
+        <input type="radio" id="options" name="question4" value="Time and real dimension in space">Time and real
+        dimension in space
+        <input type="radio" id="options" name="question4" value="Time and relative dimension in space">Time and relative
+        dimension in space<br>
+        <input type="radio" id="options" name="question4" value="Time and retroactive dimension in space">Time and
+        retroactive dimension in space
+        <input type="radio" id="options" name="question4" value="Time and retroactive dimension in Spain">Time and
+        retroactive dimension in Spain<br>
+
+        <h3><p class="questions">5. Internationally famous internet cartoon Catface has the face of a cat and the body
+        of a ..?</p></h3>
+        <input type="radio" id="options" name="question5" value="Giraffe">Giraffe
+        <input type="radio" id="options" name="question5" value="Tiger">Tiger<br>
+        <input type="radio" id="options" name="question5" value="Dog">Dog
+        <input type="radio" id="options" name="question5" value="Cat">Cat<br>
+
+        <h3><p class="questions">6. The collective noun for a group of unicorns is a ..?</p></h3>
+        <input type="radio" id="options" name="question6" value="Murder">Murder
+        <input type="radio" id="options" name="question6" value="Swarm">Swarm<br>
+        <input type="radio" id="options" name="question6" value="Blessing">Blessing
+        <input type="radio" id="options" name="question6" value="Colony">Colony<br>
+
+        <!-- calls the check_Answers function when you click on the button-->
+        <input type="button" id="btn" value="Whats my score?" onclick="check_Answers();">  
+       
+
+    </form>
+    <!-- put all the results information in here -->
+    <div id="when_Clicked">
+        <p id="total"></p>
+        <p id="message"></p>
+        <img id="images">
+    </div>
+
+</html>
+
+</body>
